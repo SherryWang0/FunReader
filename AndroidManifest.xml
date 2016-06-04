@@ -32,6 +32,10 @@
         <activity 
             android:name="com.example.funreader.Activity.ListActivity">
         </activity>
+        
+        <activity 
+            android:name="com.example.funreader.Activity.TextActivity">
+        </activity>
     </application>
 
 </manifest>

@@ -24,7 +24,7 @@ public class MyBridAdapter extends BaseAdapter
 		this.context = context;
 		list = new ArrayList<FileClass>();
 		for(int i = 0; i <l.size(); i++)
-			if(l.get(i).isInBridView())
+	//		if(l.get(i).isInBridView())
 				list.add(l.get(i));
 	}
 	@Override

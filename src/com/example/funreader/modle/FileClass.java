@@ -1,10 +1,13 @@
 package com.example.funreader.modle;
 
-public class FileClass
+import java.io.Serializable;
+
+import android.support.v4.os.ParcelableCompat;
+
+public class FileClass implements Serializable
 {
 	private String name;
 	private String path;
-	private boolean isInBridView = true;
 	private long space;
 	private long progress = 0;
 	
@@ -32,20 +35,16 @@ public class FileClass
 	{
 		this.path = path;
 	}
-	public boolean isInBridView()
-	{
-		return isInBridView;
-	}
-	public void setInBridView(boolean isInBridView)
-	{
-		this.isInBridView = isInBridView;
-	}
 	public long getProgress()
 	{
 		return progress;
 	}
-	public void setProgress(int progress)
+	public void setProgress(long progress)
 	{
 		this.progress = progress;
+	}
+	public String toString()
+	{
+		return "文件名：" + getName() + "\n路径：" + getPath() + "\n大小：" + getSpace();
 	}
 }
